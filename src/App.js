@@ -2,7 +2,9 @@ import "./App.css";
 import Home from "./pages/Home";
 import SignUpPage from "./pages/Signup";
 import LogInPage from "./pages/Login";
-
+import CartPage from "./pages/Cart";
+import CheckoutPage from "./pages/Checkout";
+import productDetailsPage from "./pages/productDetails";
 import * as React from "react";
 import { createRoot } from "react-dom/client";
 import {
@@ -24,6 +26,18 @@ const router = createBrowserRouter([
   {
     path: "/signup",
     element: <SignUpPage></SignUpPage>,
+  },
+  {
+    path: "/cart",
+    element: <CartPage></CartPage>,
+  },
+  {
+    path: "/checkout",
+    element: <CheckoutPage></CheckoutPage>,
+  },
+  {
+    path: "/product-details",
+    element: <productDetailsPage></productDetailsPage>,
   },
 ]);
 
