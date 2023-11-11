@@ -1,13 +1,36 @@
-import React from "react";
-import logo from "./logo.svg";
 import "./App.css";
 import Home from "./pages/Home";
 import SignUpPage from "./pages/Signup";
+import LogInPage from "./pages/Login";
+
+import * as React from "react";
+import { createRoot } from "react-dom/client";
+import {
+  createBrowserRouter,
+  RouterProvider,
+  Route,
+  Link,
+} from "react-router-dom";
+
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Home></Home>,
+  },
+  {
+    path: "/login",
+    element: <LogInPage></LogInPage>,
+  },
+  {
+    path: "/signup",
+    element: <SignUpPage></SignUpPage>,
+  },
+]);
+
 function App() {
   return (
     <>
-    <SignUpPage></SignUpPage>
-      {/* <Home></Home> */}
+      <RouterProvider router={router} />
     </>
   );
 }
