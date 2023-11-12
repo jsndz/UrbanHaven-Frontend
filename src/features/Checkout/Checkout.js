@@ -57,9 +57,9 @@ export default function Checkout() {
 
   return (
     <div className="flex">
-      <form className="lg:w-3/4">
-        <div className="grid grid-cols-1 gap-x-8 gap-y-10 lg:grid-cols-4">
-          <div className="lg:col-span-3">
+      <form className="lg:w-3/4 ">
+        <div className="grid grid-cols-1 gap-x-8 gap-y-10 w-120   lg:grid-cols-4">
+          <div className=" flex justify-end lg:col-span-3">
             <div className="space-y-12">
               <div className="border-b border-gray-900/10 pb-12">
                 <h2 className="text-base font-semibold leading-7 text-gray-900">
@@ -360,7 +360,7 @@ export default function Checkout() {
       </form>
       <div className="lg:w-1/4">
         <div className="mx-auto bg-white max-w-7xl px-4 sm:px-6 lg:px-8">
-          <div className="flex h-full flex-col overflow-y-scroll bg-white shadow-xl max-w-full">
+          <div className="flex justify-between h-full flex-col overflow-y-scroll bg-white shadow-xl max-w-full">
             <div className="flex-1 overflow-y-auto px-4 py-6 sm:px-6">
               <div className="flex items-start justify-between">
                 <h1 className="text-4xl font-bold tracking-tight text-gray-900">

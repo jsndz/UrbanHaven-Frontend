@@ -4,9 +4,9 @@ import SignUpPage from "./pages/Signup";
 import LogInPage from "./pages/Login";
 import CartPage from "./pages/Cart";
 import CheckoutPage from "./pages/Checkout";
-import productDetailsPage from "./pages/productDetails";
+import ProductDetailsPage from "./pages/productDetails";
 import * as React from "react";
-import { createRoot } from "react-dom/client";
+
 import {
   createBrowserRouter,
   RouterProvider,
@@ -37,7 +37,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/product-details",
-    element: <productDetailsPage></productDetailsPage>,
+    element: <ProductDetailsPage></ProductDetailsPage>,
   },
 ]);
 
