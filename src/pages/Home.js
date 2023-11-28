@@ -1,13 +1,14 @@
-import React from "react";
-import Navbar from "../features/navbar/navbar";
-import ProductList from "../features/Product/component/ProductList";
+import NavBar from "../features/navbar/Navbar";
+import ProductList from "../features/product/components/ProductList";
 
-export default function Home() {
-  return (
-    <div>
-      <Navbar>
-        <ProductList></ProductList>
-      </Navbar>
-    </div>
-  );
+function Home() {
+    return ( 
+        <div>
+            <NavBar>
+                <ProductList></ProductList>
+            </NavBar>
+        </div>
+     );
 }
+
+export default Home;
